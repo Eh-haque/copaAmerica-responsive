@@ -30,8 +30,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 50px;
 }
-.width{
+.half-width{
     width: 50%;
 }
 .navbar ul{
@@ -53,7 +54,7 @@ nav{
     font-weight: bold;
     font-size: 64px;
     line-height: 80px;
-    margin: 20px 0;
+    margin: 35px 0;
 }
 .button-style{
     padding: 10px 24px;
@@ -78,4 +79,28 @@ nav{
 .player{
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0,0,0,0.15);
+}
+
+/*------------- 
+     Footer  
+--------------*/
+.footer-details{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+.footer-details .foot-icon{
+    margin: 20px 0;
+}
+.footer-details .foot-icon a i{
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+    background-color: #ddd;
+    color: #969BAB;
+    line-height: 2em;
+}
+.footer-details p{
+    font-size: 18px;
+    line-height: 24px;
 }
