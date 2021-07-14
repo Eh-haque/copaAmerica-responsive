@@ -72,14 +72,19 @@ nav{
 .button-style .watch{
     margin-left: 10px;
 }
+.button-style:hover{
+    background: black;
+    color: #E02C6D;
+    transition: 2s;
+}
 
 /* Sliding */
 .banner-info{
     transition: width 2s, height 2s, transform 2s;
-
 }
 .banner-info:hover{
-    transition: ease-in-out;
+    margin-top: 100px;
+    transform: rotate(90deg);
 }
 @keyframes sliding{
     0%{
@@ -87,33 +92,33 @@ nav{
         left: 0;
         top: 0;
     }
-    25%{
+    /* 25%{
         bottom: 0;
         right: 0;
         background-color: white;
         transform: scale(.5);
-    }
+    } */
     50%{
-        top: 0;
-        left: 0;
-        background-color: cyan;
-        transform: scale(1);
-    }
-    75%{
         bottom: 0;
         right: 0;
         background-color: magenta;
-        transform: scale(.5);
+        transform: scale(0.5) rotate(360deg);
     }
+    /* 75%{
+        bottom: 0;
+        right: 0;
+        background-color: cyan;
+        transform: scale(.5);
+    } */
     100%{
-        background-color: rgb(0, 0, 0);
+        background-color: #2d25a0;
         left: 0px;
         top: 0;
     }
 }
 .banner-img img:hover{
     animation-play-state: running;
-    animation: sliding 2s ease-in-out 0.5s infinite alternate forwards;
+    animation: sliding 5s ease-in-out 0.5s infinite alternate forwards;
 }
 
 /*-------------------------
@@ -135,6 +140,13 @@ nav{
 }
 .player-info p{
     font-size: 16px;
+}
+.player-img{
+    overflow: hidden;
+}
+.player-img img:hover{
+    transform: scale(1.25);
+    transition: 2s;
 }
 
 /*--------------------------
@@ -196,6 +208,9 @@ nav{
 /*------------- 
      Footer  
 --------------*/
+footer{
+    margin: 100px 0;
+}
 .footer-details{
     width: 500px;
     margin: auto;
@@ -238,6 +253,7 @@ nav{
         flex-direction: column;
     }
     .banner-info h1{
+    margin-top: 50px;
         font-size: 36px;
         line-height: 50px;
     }
@@ -287,11 +303,30 @@ nav{
 
 /* Tblet Device */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    nav{
+        flex-direction: column;
+    }
     .container{
-        min-width: 768px;
+        width: auto;
     }
     .players{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .score-1{
+        flex-direction: column;
+    }
+    .score-1{
+        width: 768px;
+    }
+    .score-1>td{
+        margin: auto;
+    }
+    .highlights{
+        padding: 10px;
+        align-items: flex-end;
+    }
+    .highlight-info h2{
+        font-size: 2em;
     }
 }
 
