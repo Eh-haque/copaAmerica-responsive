@@ -202,7 +202,7 @@ nav{
     height: 90vh;
     overflow-y: scroll;
     text-align: justify;
-    background-color: #eeeeee3d;
+    background-color: #eeeeee;
 }
 
 /*------------- 
@@ -230,6 +230,9 @@ footer{
 .footer-details p{
     font-size: 18px;
     line-height: 24px;
+}
+.foot-icon a{
+    margin: 5px ;
 }
 .foot-icon a i:hover{
     transform: scale(1.25);
