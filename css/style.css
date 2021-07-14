@@ -187,6 +187,7 @@ nav{
     nav{
         display: none;
     }
+    /* banner section */
     .banner-section{
         padding: 0;
     }
@@ -198,13 +199,46 @@ nav{
         line-height: 50px;
     }
     .banner-img{
-        padding: 50px 0;
+        padding: 50px 20px;
     }
     .half-width{
         width: auto;
     }
+
     .players{
         grid-template-columns: 1fr;
+    }
+    /* highlight section */
+    .highlights{
+        flex-direction: column;
+    }
+    .highlight-info p{
+        margin-right: 0;
+    }
+    .highlight-info, .highlight-img{
+        padding: 20px;
+    }
+    /* score-board section  */
+    .score-board h2, .football-history h2, .highlights h2{
+        font-size: 30px;
+    }
+    .score-board, .score-1{
+        width: 300px;
+    }
+    .score-1{
+        flex-direction: column;
+    }
+    .score-1>td{
+        width: auto;
+    }
+    .score-1>td>table>tbody>tr>td{
+        padding: 0;
+    }
+    /* footer section */
+    footer{
+    }
+    .footer-details{
+        width: 300px;
     }
 }
 
