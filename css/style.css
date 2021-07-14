@@ -231,6 +231,12 @@ footer{
     font-size: 18px;
     line-height: 24px;
 }
+.foot-icon a i:hover{
+    transform: scale(1.25);
+    transition: 1s;
+    background: #2d25a0;
+    color: white;
+}
 
 
 
