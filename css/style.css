@@ -184,7 +184,7 @@ nav{
     transition: 1s;
 }
 .score-1>td:hover{
-    background-color: #0e130c;
+    background-color: #2d25a0;
     color: #edf0e1;
 }
 .score-1>td>table>tbody>tr>td{
@@ -202,7 +202,7 @@ nav{
     height: 90vh;
     overflow-y: scroll;
     text-align: justify;
-    background-color: #eeeeee;
+    background-color: #3dbafd;;
 }
 
 /*------------- 
@@ -311,7 +311,7 @@ footer{
 }
 
 /* Tblet Device */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
     nav{
         flex-direction: column;
     }
