@@ -44,9 +44,15 @@ nav{
     list-style: none;
 }
 
+/*------------------------
+        Banner Section 
+-------------------------*/
+.banner-section{
+    background-color: #2d25a0;
+    padding: 50px;
+}
 .banner-part{
     display: flex;
-    height: 100vh;
     align-items: center;
 }
 .banner-info h1{
@@ -79,6 +85,13 @@ nav{
 .player{
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0,0,0,0.15);
+}
+.player-info h3{
+    font-size: 28px;
+    font-weight: bold;
+}
+.player-info p{
+    font-size: 16px;
 }
 
 /*--------------------------
@@ -168,14 +181,16 @@ nav{
 -----------------------*/
 /* Mobile Device */
 @media screen and (max-width: 767px) {
-    .banner-part{
-        flex-direction: column;
+    .container{
+        max-width: 320px;
     }
-    .banner-info, .banner-img{
-        width: 100%;
+    nav{
+        display: none;
+    }
+    .banner-part{
     }
     .players{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
@@ -187,6 +202,6 @@ nav{
 }
 
 /* Laptop Device */
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
     
-}
+} */
