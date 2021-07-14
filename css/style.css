@@ -81,6 +81,62 @@ nav{
     box-shadow: 0px 0px 40px rgba(0,0,0,0.15);
 }
 
+/*--------------------------
+    Highlights Section
+---------------------------*/
+.highlights{
+    display: flex;
+}
+.highlight-info h2, .score-board h2, .football-history h2{
+    font-size: 48px;
+}
+.highlight-info p{
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+/*--------------------- 
+      Score Board 
+----------------------*/
+.score-board{
+    width: 900px;
+    margin: 100px auto;
+}
+.score-board h2{
+    text-align: center;
+}
+.score-1{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+.score-1>td{
+    width: 50%;
+    border: 1px solid #ddd;
+    transition: 1s;
+}
+.score-1>td:hover{
+    background-color: #0e130c;
+    color: #edf0e1;
+}
+.score-1>td>table>tbody>tr>td{
+    padding: 10px;
+}
+
+/*-------------------------- 
+        Football History 
+---------------------------*/
+.football-history{
+    text-align: center;
+}
+.football-history p{    
+    padding: 20px;
+    height: 90vh;
+    overflow-y: scroll;
+    text-align: justify;
+    background-color: #eeeeee3d;
+}
+
 /*------------- 
      Footer  
 --------------*/
